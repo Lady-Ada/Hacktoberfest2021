@@ -1,13 +1,12 @@
-def fact(n):
-	if n==1 :
-		return 1
-	else:
-	    return n*fact(n-1)
-n=int(input("Enter the number whoes factorial you want to find\n"))
-if n<0:
-	print("Not possible you have entered negative number")
-elif n==0:
-	print("0")
-else:
-    result=fact(n)
-    print(result)
+# Factorial of any number :)
+
+num = int(input("Enter a number: "))    
+fact = 1    
+if num < 0:    
+    print(" Factorial does not exist for negative numbers")    
+elif num == 0:    
+    print("The factorial of 0 is 1")    
+else:    
+    for i in range(1,num + 1):    
+        fact = fact*i    
+    print("The factorial of",num,"is",fact)    
